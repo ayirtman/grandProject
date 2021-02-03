@@ -1,0 +1,19 @@
+/* .option li{
+  list-style-type: none;
+} */
+
+.q1{
+  display: block;
+}
+
+.q2{
+  display: none;
+}
+
+.q3{
+  display: none;
+}
+
+.custom-selection:hover{
+  background-color: red;
+}
