@@ -18,12 +18,8 @@ header{
   display: block;
 }
 
-.custom-selection:hover{
-  background-color: red;
-}
-
 .list-group{
-     flex-direction: row;
+  flex-direction: row;
  }
 
 .row{
@@ -36,4 +32,60 @@ header{
 
 .prev-button{
   margin-right: 3%;
+}
+
+.list-group-item{
+  opacity: 1.0;
+  text-align: center;
+}
+
+.list-group-item:hover{
+  opacity: 1.0;
+}
+
+.badge{
+  margin: 0 5%;
+}
+
+.green-box{
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  background-color: green;
+  text-align: center;
+  color: white;
+  opacity: 0.5;
+  padding-top: 0.4rem;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  -user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.green-box:hover{
+  opacity: 1.0;
+}
+
+.yellow-box{
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  background-color: yellow;
+  text-align: center;
+  opacity: 0.5;
+  padding-top: 0.4rem;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  -user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.yellow-box:hover{
+  opacity: 1.0;
 }

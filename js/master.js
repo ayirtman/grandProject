@@ -13,7 +13,7 @@ const q2 = $(".q2");
 const q3 = $(".q3");
 
 const survey = $(".survey");
-
+const listItem = $(".list-group-item");
 nextBtn.click(function(){
   $(".q" + index).css("display","none");
   index += 1;
@@ -30,4 +30,30 @@ prevBtn.click(function(){
       $(".q" + index).css("display","block");
   }
   console.log(index);
+});
+
+$(".list-group-item").click(function(event){
+  $(this).css("opacity","1.0");
+  console.log($(this).html());
+});
+
+function opacityChanger(key){
+  switch (key) {
+    case "green-box":
+      $(".green-box").css("opacity","1.0");
+      $(".yellow-box").css("opacity","0.5");
+      break;
+    case "yellow-box":
+      $(".green-box").css("opacity","0.5");
+      $(".yellow-box").css("opacity","1.0");
+      break;
+    default:
+      $(".green-box").css("opacity","0.5");
+      $(".yellow-box").css("opacity","0.5");
+  }
+}
+
+$(".container").children().click(function(event){
+  var clase = $(this).attr("class");
+  opacityChanger(clase);
 });
