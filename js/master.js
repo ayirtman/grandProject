@@ -27,7 +27,6 @@ prevBtn.click(function(){
   } else {
       $(".q" + index).css("display","none");
       index -= 1;
-      console.log(index);
       $(".q" + index).css("display","block");
   }
   console.log(index);
