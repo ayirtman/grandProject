@@ -1,19 +1,39 @@
 /* .option li{
   list-style-type: none;
 } */
+header{
+  text-align: center;
+  margin-top: 5%;
+}
 
 .q1{
   display: block;
 }
 
 .q2{
-  display: none;
+  display: block;
 }
 
 .q3{
-  display: none;
+  display: block;
 }
 
 .custom-selection:hover{
   background-color: red;
+}
+
+.list-group{
+     flex-direction: row;
+ }
+
+.row{
+  margin: 5%;
+}
+
+.button-container{
+  text-align: center;
+}
+
+.prev-button{
+  margin-right: 3%;
 }
