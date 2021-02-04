@@ -6,6 +6,10 @@ header{
   margin-top: 5%;
 }
 
+p{
+  color: white;
+}
+
 .q1{
   display: block;
 }
@@ -112,33 +116,33 @@ label{
 }
 
 .purple-bg{
-  background-color: rgba(209, 6, 199, 0.2);
+  background-color: rgba(128, 0, 128, 0.2);
 }
 
 .blue-bg{
-  background-color: rgba(6, 189, 209, 0.2);
+  background-color: rgba(0, 0, 209, 0.2);
 }
 
 .green-bg{
-  background-color: rgba(0, 212, 109, 0.2);
+  background-color: rgba(0, 209, 0, 0.2);
 }
 
 .orange-bg{
-  background-color: rgba(245, 147, 12, 0.2);
+  background-color: rgba(209, 209, 0, 0.2);
 }
 input[type="radio"]:checked + label.purple-bg {
-  background-color: rgba(209, 6, 199, 1);
+  background-color: rgba(128, 0, 128, 1);
 }
 
 input[type="radio"]:checked + label.blue-bg{
-  background-color: rgba(6, 189, 209, 1);
+  background-color: rgba(0, 0, 209, 1);
 }
 
 input[type="radio"]:checked + label.green-bg{
-  background-color: rgba(0, 212, 109, 1);
+  background-color: rgba(0, 209, 0, 1);
 }
 input[type="radio"]:checked + label.orange-bg{
-  background-color: rgba(245, 147, 12, 1);
+  background-color: rgba(255, 255, 0, 1);
 }
 
 .range{
