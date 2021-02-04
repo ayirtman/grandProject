@@ -47,13 +47,13 @@
           <div class="card  q3">
             <h5 class="card-header">Durmaksızın ekipçe kazanmaya odaklanma davranışını sergileme seviyesi nedir?</h5>
             <div class="card-body">
-              <input type="radio" name="question2" id="q3a1">
+              <input type="radio" name="question3" id="q3a1">
               <label class="purple-bg" for="q3a1"><p>R</p></label>
-              <input type="radio" name="question2" id="q3a2">
+              <input type="radio" name="question3" id="q3a2">
               <label class="orange-bg" for="q3a2"><p>U</p></label>
-              <input type="radio" name="question2" id="q3a3">
+              <input type="radio" name="question3" id="q3a3">
               <label class="green-bg" for="q3a3"><p>Y</p></label>
-              <input type="radio" name="question2" id="q3a4">
+              <input type="radio" name="question3" id="q3a4">
               <label class="blue-bg" for="q3a4"><p>Ö</p></label>
             </div>
           </div>
@@ -64,38 +64,34 @@
           <div class="card  q4">
             <h5 class="card-header">Kayıtsız davranan ve riskten kaçınan bir yaklaşım sergileme olasılığı nedir?</h5>
             <div class="card-body">
-              <ul class="list-group option3">
-                <li class="list-group-item list-group-item-action list-group-item-primary">Çok düşük</li>
-                <li class="list-group-item list-group-item-action list-group-item-secondary">Düşük</li>
-                <li class="list-group-item list-group-item-action list-group-item-success">Yüksek</li>
-                <li class="list-group-item list-group-item-action list-group-item-danger">Çok yüksek</li>
-              </ul>
+              <div class="range">
+                <div class="sliderValue">
+                  <span id="slider1value">2</span>
+                </div>
+                <div class="field">
+                  <div class="value left">Çok Düşük</div>
+                  <input id="rangeInput" type="range" min="1" max="4" steps="1" value="2">
+                  <div class="value right">Çok Yüksek</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-md-12">
           <div class="card q5 rounded">
             <h5 class="card-header">Kayıtsız davranan ve riskten kaçınan bir yaklaşım sergileme olasılığı nedir?</h5>
-            <div class="card-body">
-              <ul class="list-group option3">
-                <li class="list-group-item list-group-item-action list-group-item-primary">Çok düşük</li>
-                <li class="list-group-item list-group-item-action list-group-item-secondary">Düşük</li>
-                <li class="list-group-item list-group-item-action list-group-item-success">Yüksek</li>
-                <li class="list-group-item list-group-item-action list-group-item-danger">Çok yüksek</li>
-              </ul>
+            <div class="card-body slider-option">
+              <input type="range" name="question5" id="question5" value="2" min="1" max="4">
+              <label for="question5"></label>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-md-12">
-          <div class="card  q6">
+          <div class="card q6">
             <h5 class="card-header">Kayıtsız davranan ve riskten kaçınan bir yaklaşım sergileme olasılığı nedir?</h5>
-            <div class="card-body">
-              <ul class="list-group option3">
-                <li class="list-group-item list-group-item-action list-group-item-primary">Çok düşük</li>
-                <li class="list-group-item list-group-item-action list-group-item-secondary">Düşük</li>
-                <li class="list-group-item list-group-item-action list-group-item-success">Yüksek</li>
-                <li class="list-group-item list-group-item-action list-group-item-danger">Çok yüksek</li>
-              </ul>
+            <div class="card-body slider-option">
+              <input type="range" name="question6" id="question6" value="2" min="1" max="4">
+              <label for="question6"></label>
             </div>
           </div>
         </div>

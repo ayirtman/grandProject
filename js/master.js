@@ -2,6 +2,7 @@ const ul_1 = $(".option1");
 const ul_2 = $(".option2");
 const ul_3 = $(".option3");
 
+var valueText = "";
 var index = 1;
 var quest = $(".q" + index);
 
@@ -37,23 +38,6 @@ $(".list-group-item").click(function(event){
   console.log($(this).html());
 });
 
-function opacityChanger(key){
-  switch (key) {
-    case "green-box":
-      $(".green-box").css("opacity","1.0");
-      $(".yellow-box").css("opacity","0.5");
-      break;
-    case "yellow-box":
-      $(".green-box").css("opacity","0.5");
-      $(".yellow-box").css("opacity","1.0");
-      break;
-    default:
-      $(".green-box").css("opacity","0.5");
-      $(".yellow-box").css("opacity","0.5");
-  }
-}
-
-$(".container").children().click(function(event){
-  var clase = $(this).attr("class");
-  opacityChanger(clase);
-});
+$("#rangeInput").on('input', function() {
+  $("#slider1value").text(this.value);
+})

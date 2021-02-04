@@ -126,22 +126,6 @@ label{
 .orange-bg{
   background-color: rgba(245, 147, 12, 0.2);
 }
-
-/* input[type="radio"]:hover + label.purple-bg {
-  background-color: rgba(209, 6, 199, 1);
-}
-
-input[type="radio"]:hover + label.blue-bg{
-  background-color: rgba(6, 189, 209, 1);
-}
-
-input[type="radio"]:hover + label.green-bg{
-  background-color: rgba(0, 212, 109, 1);
-}
-input[type="radio"]:hover + label.orange-bg{
-  background-color: rgba(245, 147, 12, 1);
-} */
-
 input[type="radio"]:checked + label.purple-bg {
   background-color: rgba(209, 6, 199, 1);
 }
@@ -156,27 +140,83 @@ input[type="radio"]:checked + label.green-bg{
 input[type="radio"]:checked + label.orange-bg{
   background-color: rgba(245, 147, 12, 1);
 }
-/* label{
-  height: 180px;
-  width: 240px;
-  border: 6px solid #18f98d;
-  position: relative;
-  margin: auto;
-  justify-content: center;
-  text-align: center;
+
+.range{
+  height: 80px;
+  width: 380px;
   border-radius: 20px;
-  color: #18f98d;
-  font-size: 80px;
+  padding: 0 65px 0 45px;
 }
 
-.container1 p{
+.range .sliderValue{
+  position: relative;
+  width: 100%;
+}
+
+.range .sliderValue span{
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-80%);
+  height: 45px;
+  width: 45px;
+  top: -20px;
+  color: white;
+  font-weight: 600px;
+  transform: translateX(-50%);
+  line-height: 55px;
+  z-index: 2;
 }
 
-input[type="radio"]:checked + label{
-  background-color: #18f98d;
-  color: white;
-} */
+.range .sliderValue span:after{
+  position: absolute;
+  content: "";
+  height: 45px;
+  width: 45px;
+  background: #664aff;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  border: 3px solid #fff;
+  z-index: -1;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+.range .field{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.range .field .value{
+  font-size: 18px;
+  font-weight: 600;
+  color: #664aff;
+}
+
+.range .field .value.left{
+  left: -43px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #664aff;
+}
+
+.range .field input{
+  -webkit-appearance: none;
+  height: 3px;
+  width: 100%;
+  background: #ddd;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+
+.range .field input::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  background: #664aff;
+  border-radius: 50%;
+  border: 1px solid #664aff;
+  cursor: pointer;
+}
