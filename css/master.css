@@ -89,3 +89,94 @@ header{
 .yellow-box:hover{
   opacity: 1.0;
 }
+
+.card-body{
+  text-align: center;
+}
+
+input[type="radio"]{
+  -webkit-appearance: none;
+}
+
+label{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 3%;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background 0.5s;
+}
+
+.purple-bg{
+  background-color: rgba(209, 6, 199, 0.2);
+}
+
+.blue-bg{
+  background-color: rgba(6, 189, 209, 0.2);
+}
+
+.green-bg{
+  background-color: rgba(0, 212, 109, 0.2);
+}
+
+.orange-bg{
+  background-color: rgba(245, 147, 12, 0.2);
+}
+
+/* input[type="radio"]:hover + label.purple-bg {
+  background-color: rgba(209, 6, 199, 1);
+}
+
+input[type="radio"]:hover + label.blue-bg{
+  background-color: rgba(6, 189, 209, 1);
+}
+
+input[type="radio"]:hover + label.green-bg{
+  background-color: rgba(0, 212, 109, 1);
+}
+input[type="radio"]:hover + label.orange-bg{
+  background-color: rgba(245, 147, 12, 1);
+} */
+
+input[type="radio"]:checked + label.purple-bg {
+  background-color: rgba(209, 6, 199, 1);
+}
+
+input[type="radio"]:checked + label.blue-bg{
+  background-color: rgba(6, 189, 209, 1);
+}
+
+input[type="radio"]:checked + label.green-bg{
+  background-color: rgba(0, 212, 109, 1);
+}
+input[type="radio"]:checked + label.orange-bg{
+  background-color: rgba(245, 147, 12, 1);
+}
+/* label{
+  height: 180px;
+  width: 240px;
+  border: 6px solid #18f98d;
+  position: relative;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  border-radius: 20px;
+  color: #18f98d;
+  font-size: 80px;
+}
+
+.container1 p{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-80%);
+}
+
+input[type="radio"]:checked + label{
+  background-color: #18f98d;
+  color: white;
+} */
