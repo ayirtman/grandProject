@@ -40,4 +40,5 @@ $(".list-group-item").click(function(event){
 
 $("#rangeInput").on('input', function() {
   $("#slider1value").text(this.value);
+  $("#slider1value").css("left",(this.value*20) + "%");
 })
