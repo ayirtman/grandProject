@@ -10,19 +10,23 @@ h2{
 }
 
 .purple-bg{
-  background-color: #8C59BD;
+  background-color: rgba(140, 89, 189, 0.3);
+  transition: background-color 1s;
 }
 
 .blue-bg{
-  background-color: #0038C1;
+  background-color: rgba(0, 56, 193, 0.3);
+  transition: background-color 1s;
 }
 
 .green-bg{
- background-color: #43AE02;
+ background-color: rgba(67, 174, 2, 0.3);
+ transition: background-color 1s;
 }
 
 .orange-bg{
-  background-color: #FFC101;
+  background-color: rgba(255, 193, 1, 0.3);
+  transition: background-color 1s;
 }
 
 .container{
@@ -40,14 +44,33 @@ h2{
   display: flex;
 }
 
+.selection-container{
+  height: 30px;
+  width: 30px;
+  margin: 0 20px;
+}
+
 input[type="radio"]{
   display: none;
 }
 
-label{
-  margin: 0 10px;
-  border: 1px solid black;
-  height: 30px;
-  width: 30px;
-  padding: 15px;
+input[type="radio"]+label{
+  padding: 20px;
+  border-radius:50%;
+}
+
+input[type="radio"]+label.green-bg:hover, input[type="radio"]:checked + label.green-bg{
+ background-color: rgba(67, 174, 2, 1);
+}
+
+input[type="radio"]+label.purple-bg:hover, input[type="radio"]:checked + label.purple-bg{
+  background-color: rgba(140, 89, 189, 1);
+}
+
+input[type="radio"]+label.blue-bg:hover, input[type="radio"]:checked + label.blue-bg{
+  background-color: rgba(0, 56, 193, 1);
+}
+
+input[type="radio"]+label.orange-bg:hover, input[type="radio"]:checked + label.orange-bg{
+  background-color: rgba(255, 193, 1, 1);
 }
