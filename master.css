@@ -1,226 +1,44 @@
-/* .option li{
-  list-style-type: none;
-} */
-header{
-  text-align: center;
-  margin-top: 5%;
+*{
+  box-sizing: border-box;
 }
 
-p{
-  color: white;
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.q1{
-  display: block;
-}
-
-.q2{
-  display: block;
-}
-
-.q3{
-  display: block;
-}
-
-.list-group{
-  flex-direction: row;
- }
-
-.row{
-  margin: 5%;
-}
-
-.button-container{
-  text-align: center;
-}
-
-.prev-button{
-  margin-right: 3%;
-}
-
-.list-group-item{
-  opacity: 1.0;
-  text-align: center;
-}
-
-.list-group-item:hover{
-  opacity: 1.0;
-}
-
-.badge{
-  margin: 0 5%;
-}
-
-.green-box{
-  height: 2.5rem;
-  width: 2.5rem;
-  border-radius: 50%;
-  background-color: green;
-  text-align: center;
-  color: white;
-  opacity: 0.5;
-  padding-top: 0.4rem;
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Safari */
-  -khtml-user-select: none; /* Konqueror HTML */
-  -moz-user-select: none; /* Old versions of Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-  -user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
-}
-
-.green-box:hover{
-  opacity: 1.0;
-}
-
-.yellow-box{
-  height: 2.5rem;
-  width: 2.5rem;
-  border-radius: 50%;
-  background-color: yellow;
-  text-align: center;
-  opacity: 0.5;
-  padding-top: 0.4rem;
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Safari */
-  -khtml-user-select: none; /* Konqueror HTML */
-  -moz-user-select: none; /* Old versions of Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-  -user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
-}
-
-.yellow-box:hover{
-  opacity: 1.0;
-}
-
-.card-body{
-  text-align: center;
-}
-
-input[type="radio"]{
-  -webkit-appearance: none;
-}
-
-label{
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  position: relative;
-  margin: 0 3%;
-  justify-content: center;
-  text-align: center;
-  font-size: 1.5rem;
-  cursor: pointer;
-  transition: background 0.5s;
+h2{
+  font-family: 'Merriweather', serif;
 }
 
 .purple-bg{
-  background-color: rgba(128, 0, 128, 0.2);
+  background-color: #8C59BD;
 }
 
 .blue-bg{
-  background-color: rgba(0, 0, 209, 0.2);
+  background-color: #0038C1;
 }
 
 .green-bg{
-  background-color: rgba(0, 209, 0, 0.2);
+ background-color: #43AE02;
 }
 
 .orange-bg{
-  background-color: rgba(209, 209, 0, 0.2);
-}
-input[type="radio"]:checked + label.purple-bg {
-  background-color: rgba(128, 0, 128, 1);
+  background-color: #FFC101;
 }
 
-input[type="radio"]:checked + label.blue-bg{
-  background-color: rgba(0, 0, 209, 1);
+.container{
+  text-align: center;
+}
+.card{
+  max-width: 500px;
+  display: inline-block;
+  text-align: left;
+  padding: 0 50px;
+  border: 2px solid red;
 }
 
-input[type="radio"]:checked + label.green-bg{
-  background-color: rgba(0, 209, 0, 1);
-}
-input[type="radio"]:checked + label.orange-bg{
-  background-color: rgba(255, 255, 0, 1);
-}
-
-.range{
-  height: 80px;
-  width: 380px;
-  border-radius: 20px;
-  padding: 0 65px 0 45px;
-}
-
-.range .sliderValue{
-  position: relative;
-  width: 100%;
-}
-
-.range .sliderValue span{
-  position: absolute;
-  height: 45px;
-  width: 45px;
-  top: -20px;
-  color: white;
-  font-weight: 600px;
-  transform: translateX(-50%);
-  line-height: 55px;
-  z-index: 2;
-}
-
-.range .sliderValue span:after{
-  position: absolute;
-  content: "";
-  height: 45px;
-  width: 45px;
-  background: #664aff;
-  left: 50%;
-  transform: translateX(-50%) rotate(45deg);
-  border: 3px solid #fff;
-  z-index: -1;
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
-  border-bottom-left-radius: 50%;
-}
-
-.range .field{
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
-
-.range .field .value{
-  font-size: 18px;
-  font-weight: 600;
-  color: #664aff;
-}
-
-.range .field .value.left{
-  left: -43px;
-  font-size: 18px;
-  font-weight: 600;
-  color: #664aff;
-}
-
-.range .field input{
-  -webkit-appearance: none;
-  height: 3px;
-  width: 100%;
-  background: #ddd;
-  border-radius: 5px;
-  outline: none;
-  border: none;
-}
-
-.range .field input::-webkit-slider-thumb{
-  -webkit-appearance: none;
-  height: 20px;
-  width: 20px;
-  background: #664aff;
-  border-radius: 50%;
-  border: 1px solid #664aff;
-  cursor: pointer;
+input[type=radio]{
+  display: none;
 }

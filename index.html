@@ -3,113 +3,238 @@
   <head>
     <meta charset="utf-8">
     <title>Step Metric</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="master.css">
   </head>
   <body>
-    <header>
-      <h1>Step-Metric Değerlendirme Analiz</h1>
-      <p>Kaçınılması gereken davrnanışlar için seçenekler değerlendirmenizi Yüksekten Düşüğü vereceğiniz şekilde ayarlanmıştır.</p>
-    </header>
-    <div class="survey">
-      <div class="row">
-        <div class="col-lg-4 col-md-12">
-          <div class="card q1">
-            <h5 class="card-header">Pazarda 1 numara olmak için çaba gösterme davranışını sergileme seviyesi nedir?</h5>
-            <div class="card-body">
-              <input type="radio" name="question1" id="q1a1">
-              <label class="purple-bg" for="q1a1"><p>R</p></label>
-              <input type="radio" name="question1" id="q1a2">
-              <label class="orange-bg" for="q1a2"><p>U</p></label>
-              <input type="radio" name="question1" id="q1a3">
-              <label class="green-bg" for="q1a3"><p>Y</p></label>
-              <input type="radio" name="question1" id="q1a4">
-              <label class="blue-bg" for="q1a4"><p>Ö</p></label>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-12">
-          <div class="card  q2">
-            <h5 class="card-header">Zorluklara ve engellere karşı direnç davranışını sergileme seviyesi nedir?</h5>
-            <div class="card-body">
-                <input type="radio" name="question2" id="q2a1">
-                <label class="purple-bg" for="q2a1"><p>R</p></label>
-                <input type="radio" name="question2" id="q2a2">
-                <label class="orange-bg" for="q2a2"><p>U</p></label>
-                <input type="radio" name="question2" id="q2a3">
-                <label class="green-bg" for="q2a3"><p>Y</p></label>
-                <input type="radio" name="question2" id="q2a4">
-                <label class="blue-bg" for="q2a4"><p>Ö</p></label>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-12">
-          <div class="card  q3">
-            <h5 class="card-header">Durmaksızın ekipçe kazanmaya odaklanma davranışını sergileme seviyesi nedir?</h5>
-            <div class="card-body">
-              <input type="radio" name="question3" id="q3a1">
-              <label class="purple-bg" for="q3a1"><p>R</p></label>
-              <input type="radio" name="question3" id="q3a2">
-              <label class="orange-bg" for="q3a2"><p>U</p></label>
-              <input type="radio" name="question3" id="q3a3">
-              <label class="green-bg" for="q3a3"><p>Y</p></label>
-              <input type="radio" name="question3" id="q3a4">
-              <label class="blue-bg" for="q3a4"><p>Ö</p></label>
-            </div>
-          </div>
-        </div>
+    <h2>11 - LİDERLİK - Kazanmak İçin Oyna</h2>
+    <div class="container">
+      <div class="card">
+        <h4>Pazarda 1 numara olmak için çabalarını ekipçe kazanmaya odaklama davranışını sergileme seviyesi nedir?</h4>
+        <input type="radio" name="q1" id="a1">
+        <label for="a1" class="green-bg">Ö</label>
+        <input type="radio" name="q1" id="a2">
+        <label for="a2" class="orange-bg">Y</label>
+        <input type="radio" name="q1" id="a3">
+        <label for="a3" class="blue-bg">U</label>
+        <input type="radio" name="q1" id="a4">
+        <label for="a4" class="purple-bg">U</label>
       </div>
-      <div class="row">
-        <div class="col-lg-4 col-md-12">
-          <div class="card  q4">
-            <h5 class="card-header">Kayıtsız davranan ve riskten kaçınan bir yaklaşım sergileme olasılığı nedir?</h5>
-            <div class="card-body">
-              <div class="range">
-                <div class="sliderValue">
-                  <span id="slider1value">2</span>
-                </div>
-                <div class="field">
-                  <div class="value left">Çok Düşük</div>
-                  <input id="rangeInput" type="range" min="1" max="4" steps="1" value="2">
-                  <div class="value right">Çok Yüksek</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-12">
-          <div class="card q5 rounded">
-            <h5 class="card-header">Kayıtsız davranan ve riskten kaçınan bir yaklaşım sergileme olasılığı nedir?</h5>
-            <div class="card-body slider-option">
-              <input type="range" name="question5" id="question5" value="2" min="1" max="4">
-              <label for="question5"></label>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-12">
-          <div class="card q6">
-            <h5 class="card-header">Kayıtsız davranan ve riskten kaçınan bir yaklaşım sergileme olasılığı nedir?</h5>
-            <div class="card-body slider-option">
-              <input type="range" name="question6" id="question6" value="2" min="1" max="4">
-              <label for="question6"></label>
-            </div>
-          </div>
-        </div>
+      <div class="card">
+        <h4>Zorlukların ve engellerin sonuca ulaşmadaki kararlılığını etkilemesine direnç davranışını sergileme seviyesi nedir?</h4>
+        <input type="radio" name="q2" id="a5">
+        <label for="a5" class="green-bg">Ö</label>
+        <input type="radio" name="q2" id="a6">
+        <label for="a6" class="orange-bg">Y</label>
+        <input type="radio" name="q2" id="a7">
+        <label for="a7" class="blue-bg">U</label>
+        <input type="radio" name="q2" id="a8">
+        <label for="a8" class="purple-bg">U</label>
       </div>
-      <div class="button-container">
-        <button class="btn btn-lg btn-outline-success prev-button" type="button" name="button">Önceki Sayfa</button>
-        <button class="btn btn-lg btn-outline-primary next-button" type="button" name="button">Sonraki Sayfa</button>
+      <div class="card">
+        <h4>Ekipte ivedilik ve bireysel sorumluluk duygusunun gelişmesini destekleme davranışını sergileme seviyesi nedir?</h4>
+        <input type="radio" name="q3" id="a9">
+        <label for="a9" class="green-bg">Ö</label>
+        <input type="radio" name="q3" id="a10">
+        <label for="a10" class="orange-bg">Y</label>
+        <input type="radio" name="q3" id="a11">
+        <label for="a11" class="blue-bg">U</label>
+        <input type="radio" name="q3" id="a12">
+        <label for="a12" class="purple-bg">U</label>
       </div>
     </div>
-    <!-- <div class="container1">
-      <input type="radio" name="question1" id="q1" checked>
-      <label for="q1"><p>R</p></label>
-      <input type="radio" name="question1" id="q2" checked>
-      <label for="q2"><p>Y</p></label>
-    </div> -->
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="./js/master.js" charset="utf-8"></script>
+    <div class="container">
+      <div class="card">
+    		<h4>Kayıtsız davranan ve riskten kaçınan bir yaklaşım sergileme olasılığı nedir?</h4>
+        <p>Çok düşük</p>
+        <input type="range" name="q4" id="a13" value="2" min="1" max="4">
+        <p>Çok yüksek</p>
+      </div>
+      <div class="card">
+        <h4>Ne pahasına olursa olsun kazanmaya çalışan bir yaklaşım sergileme olasılığı nedir?</h4>
+        <p>Çok düşük</p>
+        <input type="range" name="q5" id="a14" value="2" min="1" max="4">
+        <p>Çok yüksek</p>
+      </div>
+    	<div class="card">
+    		<h4>Ekip çalışması veya şirket genelini kapsayan bir düşünce yapısı yerine kendine odaklı bir yaklaşım sergileme olasılığı nedir?</h4>
+        <p>Çok düşük</p>
+        <input type="range" name="q6" id="a15" value="2" min="1" max="4">
+        <p>Çok yüksek</p>
+      </div>
+    </div>
+		<h2>22 - DÜRÜSTLÜK - Güven Oluştur ve Katılımcı Ol</h2>
+    <div class="container">
+      <div class="card">
+        <h4>Yetkiyi, gücü ve itibarı paylaşma davranışını sergileme seviyesi nedir?</h4>
+        <input type="radio" name="q7" id="a16">
+        <label for="a16" class="green-bg">Ö</label>
+        <input type="radio" name="q7" id="a17">
+        <label for="a17" class="orange-bg">Y</label>
+        <input type="radio" name="q7" id="a18">
+        <label for="a18" class="blue-bg">U</label>
+        <input type="radio" name="q7" id="a19">
+        <label for="a19" class="purple-bg">U</label>
+      </div>
+  		<div class="card">
+        <h4>Yeni fikirlerin ve farklı bakış açılarının hoş karşılandığı bir ortam yaratma davranışını sergileme seviyesi nedir?</h4>
+        <input type="radio" name="q8" id="a20">
+        <label for="a20" class="green-bg">Ö</label>
+        <input type="radio" name="q8" id="a21">
+        <label for="a21" class="orange-bg">Y</label>
+        <input type="radio" name="q8" id="a22">
+        <label for="a22" class="blue-bg">U</label>
+        <input type="radio" name="q8" id="a23">
+        <label for="a23" class="purple-bg">U</label>
+      </div>
+      <div class="card">
+        <h4>İnsanlara şeffaf, adil ve saygılı davranma davranışını sergileme seviyesi nedir?</h4>
+        <input type="radio" name="q9" id="a24">
+        <label for="a24" class="green-bg">Ö</label>
+        <input type="radio" name="q9" id="a25">
+        <label for="a25" class="orange-bg">Y</label>
+        <input type="radio" name="q9" id="a26">
+        <label for="a26" class="blue-bg">U</label>
+        <input type="radio" name="q9" id="a27">
+        <label for="a27" class="purple-bg">U</label>
+      </div>
+    </div>
+    <div class="container">
+      <div class="card">
+    		<h4>Farklı bakış açıları aramayan bir yaklaşım sergileme olasılığı nedir?</h4>
+        <p>Çok düşük</p>
+        <input type="range" name="q10" id="a28" value="2" min="1" max="4">
+        <p>Çok yüksek</p>
+      </div>
+      <div class="card">
+        <h4>Özgün olmayan, tutarsız davranışlara ve gizli gündeme sahip olan bir yaklaşım sergileme olasılığı nedir?</h4>
+        <p>Çok düşük</p>
+        <input type="range" name="q11" id="a29" value="2" min="1" max="4">
+        <p>Çok yüksek</p>
+      </div>
+      <div class="card">
+        <h4>Fikir birliğine varmak için acele eden bir yaklaşım sergileme olasılığı nedir?</h4>
+        <p>Çok düşük</p>
+        <input type="range" name="q12" id="a30" value="2" min="1" max="4">
+        <p>Çok yüksek</p>
+      </div>
+    </div>
+    <h2>32 - ESNEKLİK - Yenilikler Getir ve Deneyimle</h2>
+    <div class="container">
+      <div class="card">
+        <h4>Her zaman gelişmenin peşinde olma ve yeni fikirleri teşvik eden bir ortam yaratma davranışını sergileme seviyesi nedir?</h4>
+        <input type="radio" name="q13" id="a31">
+        <label for="a31" class="green-bg">Ö</label>
+        <input type="radio" name="q13" id="a32">
+        <label for="a32" class="orange-bg">Y</label>
+        <input type="radio" name="q13" id="a33">
+        <label for="a33" class="blue-bg">U</label>
+        <input type="radio" name="q13" id="a34">
+        <label for="a34" class="purple-bg">U</label>
+      </div>
+      <div class="card">
+        <h4>Yeni fikirler, yeni uygulamalar ve yeni çalışma şekilleri deneme davranışını sergileme seviyesi nedir?</h4>
+        <input type="radio" name="q14" id="a35">
+        <label for="a35" class="green-bg">Ö</label>
+        <input type="radio" name="q14" id="a36">
+        <label for="a36" class="orange-bg">Y</label>
+        <input type="radio" name="q14" id="a37">
+        <label for="a37" class="blue-bg">U</label>
+        <input type="radio" name="q14" id="a38">
+        <label for="a38" class="purple-bg">U</label>
+      </div>
+      <div class="card">
+        <h4>Tekrar etme ve hatalardan ders çıkarma yoluyla sonuç elde etme davranışını sergileme seviyesi nedir?</h4>
+        <input type="radio" name="q15" id="a39">
+        <label for="a39" class="green-bg">Ö</label>
+        <input type="radio" name="q15" id="a40">
+        <label for="a40" class="orange-bg">Y</label>
+        <input type="radio" name="q15" id="a41">
+        <label for="a41" class="blue-bg">U</label>
+        <input type="radio" name="q15" id="a42">
+        <label for="a42" class="purple-bg">U</label>
+      </div>
+    </div>
+    <div class="container">
+      <div class="card">
+        <h4>Başarısızlıktan, utanç duymaktan ya da hata yapmaktan korkan bir yaklaşım sergileme olasılığı nedir?</h4>
+        <p>Çok düşük</p>
+        <input type="range" name="q16" id="a43" value="2" min="1" max="4">
+        <p>Çok yüksek</p>
+      </div>
+      <div class="card">
+        <h4>Rahatlığı ve konfor alanında kalmayı tercih eden bir yaklaşım sergileme olasılığı nedir?</h4>
+        <p>Çok düşük</p>
+        <input type="range" name="q17" id="a44" value="2" min="1" max="4">
+        <p>Çok yüksek</p>
+      </div>
+      <div class="card">
+        <h4>Yeniliği ve deneyimi desteklemek için kaynakları yönetmeyen bir yaklaşım sergileme olasılığı nedir?</h4>
+        <p>Çok düşük</p>
+        <input type="range" name="q18" id="a45" value="2" min="1" max="4">
+        <p>Çok yüksek</p>
+      </div>
+    </div>
+		<h2>41 - VERİMLİLİK - Sorumlu ol</h2>
+    <div class="container">
+      <div class="card">
+        <h4>Zorlu durumlarla kaçmadan yüzleşme, karar alma ve kendi eylemlerinin sorumluluğunu üstlenme davranışını sergileme seviyesi nedir?</h4>
+        <input type="radio" name="q19" id="a46">
+        <label for="a46" class="green-bg">Ö</label>
+        <input type="radio" name="q19" id="a47">
+        <label for="a47" class="orange-bg">Y</label>
+        <input type="radio" name="q19" id="a48">
+        <label for="a48" class="blue-bg">U</label>
+        <input type="radio" name="q19" id="a49">
+        <label for="a49" class="purple-bg">U</label>
+      </div>
+      <div class="card">
+        <h4>Her konuyu ivedilikle ve bitirme taahhüdüyle ele alma davranışını sergileme seviyesi nedir?</h4>
+        <input type="radio" name="q20" id="a50">
+        <label for="a50" class="green-bg">Ö</label>
+        <input type="radio" name="q20" id="a51">
+        <label for="a51" class="orange-bg">Y</label>
+        <input type="radio" name="q20" id="a52">
+        <label for="a52" class="blue-bg">U</label>
+        <input type="radio" name="q20" id="a53">
+        <label for="a53" class="purple-bg">U</label>
+      </div>
+      <div class="card">
+        <h4>Karmaşık bilgileri anlama ve diğer insanların işlerini yapabilmesi için konuya netlik kazandırarak bilgileri basitleştirme davranışını sergileme seviyesi nedir?</h4>
+        <input type="radio" name="q21" id="a54">
+        <label for="a54" class="green-bg">Ö</label>
+        <input type="radio" name="q21" id="a55">
+        <label for="a55" class="orange-bg">Y</label>
+        <input type="radio" name="q21" id="a56">
+        <label for="a56" class="blue-bg">U</label>
+        <input type="radio" name="q21" id="a57">
+        <label for="a57" class="purple-bg">U</label>
+      </div>
+    </div>
+    <div class="container">
+      <div class="card">
+        <h4>Geciktiren bir yaklaşım sergileme olasılığı nedir?</h4>
+        <p>Çok düşük</p>
+        <input type="range" name="q22" id="a58" value="2" min="1" max="4">
+        <p>Çok yüksek</p>
+      </div>
+      <div class="card">
+        <h4>Başkasını suçlayan bir yaklaşım sergileme olasılığı nedir?</h4>
+        <p>Çok düşük</p>
+        <input type="range" name="q23" id="a59" value="2" min="1" max="4">
+        <p>Çok yüksek</p>
+      </div>
+      <div class="card">
+        <h4>Sorumluluğu başkalarına yıkan bir yaklaşım sergileme olasılığı nedir?</h4>
+        <p>Çok düşük</p>
+        <input type="range" name="q24" id="a60" value="2" min="1" max="4">
+        <p>Çok yüksek</p>
+      </div>
+    </div>
+    <!-- <script src="hh2ps://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <!-- <script src="./js/master.js" charset="utf-8"></script> -->
   </body>
 </html>
 <!-- <html lang="en" dir="ltr">
@@ -118,20 +243,20 @@
   <meta charset="utf-8">
   <title>Drum Kit</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+  <link href="hh2ps://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
 </head>
 
 <body>
 
   <h1 id="title">Drum 🥁 Kit</h1>
   <div class="set">
-    <button class="w drum">w</button>
-    <button class="a drum">a</button>
-    <button class="s drum">s</button>
-    <button class="d drum">d</button>
-    <button class="j drum">j</button>
-    <button class="k drum">k</button>
-    <button class="l drum">l</button>
+    <buh2on class="w drum">w</buh2on>
+    <buh2on class="a drum">a</buh2on>
+    <buh2on class="s drum">s</buh2on>
+    <buh2on class="d drum">d</buh2on>
+    <buh2on class="j drum">j</buh2on>
+    <buh2on class="k drum">k</buh2on>
+    <buh2on class="l drum">l</buh2on>
   </div>
 
 
