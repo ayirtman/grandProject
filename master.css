@@ -1,6 +1,3 @@
-*{
-  box-sizing: border-box;
-}
 
 body{
   margin: 0;
@@ -32,13 +29,25 @@ h2{
   text-align: center;
 }
 .card{
-  max-width: 500px;
+  width: 400px;
   display: inline-block;
   text-align: left;
-  padding: 0 50px;
+  padding: 0 50px 30px;
   border: 2px solid red;
 }
 
-input[type=radio]{
+.input{
+  display: flex;
+}
+
+input[type="radio"]{
   display: none;
+}
+
+label{
+  margin: 0 10px;
+  border: 1px solid black;
+  height: 30px;
+  width: 30px;
+  padding: 15px;
 }
