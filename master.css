@@ -29,17 +29,21 @@ h2{
   transition: background-color 1s;
 }
 
-.container{
-  text-align: center;
+.section{
 }
+
+.flexbox-container{
+  display: flex;
+}
+
 .card{
   width: 400px;
-  display: inline-block;
+  /* display: inline-block; */
   text-align: left;
   padding: 0 50px 30px;
   border: 2px solid red;
 }
-
+/*
 .input{
   display: flex;
 }
@@ -48,7 +52,7 @@ h2{
   height: 30px;
   width: 30px;
   margin: 0 20px;
-}
+} */
 
 input[type="radio"]{
   display: none;
@@ -56,7 +60,7 @@ input[type="radio"]{
 
 input[type="radio"]+label{
   padding: 20px;
-  border-radius:50%;
+  border-radius: 60%;
 }
 
 input[type="radio"]+label.green-bg:hover, input[type="radio"]:checked + label.green-bg{
