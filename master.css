@@ -2,13 +2,19 @@
 body{
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Lusitana', serif;
+  /* font-family: 'Montserrat', sans-serif; */
 }
 
 h2{
-  font-family: 'Merriweather', serif;
+  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Merriweather', serif; */
 }
 
+p{
+  color: #666;
+  font-size: 1.2rem;
+}
 .purple-bg{
   background-color: rgba(140, 89, 189, 0.3);
   transition: background-color 1s;
@@ -30,18 +36,26 @@ h2{
 }
 
 .section{
+  margin: 200px 0;
+  text-align: center;
 }
 
 .flexbox-container{
   display: flex;
 }
 
+.
+.selection-container{
+  margin: 4px 10px;
+  border: 1px solid red;
+}
 .card{
   width: 400px;
   /* display: inline-block; */
   text-align: left;
-  padding: 0 50px 30px;
-  border: 2px solid red;
+  padding: 20px 20px 0;
+  margin: 15px 10px;
+  box-shadow: 5px 5px 5px 2px #BBB;
 }
 /*
 .input{
@@ -59,8 +73,9 @@ input[type="radio"]{
 }
 
 input[type="radio"]+label{
-  padding: 20px;
-  border-radius: 60%;
+  padding: 30px;
+  margin: 5px 5px 0;
+  border-radius: 50%;
 }
 
 input[type="radio"]+label.green-bg:hover, input[type="radio"]:checked + label.green-bg{
