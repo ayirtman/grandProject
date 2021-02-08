@@ -15,6 +15,19 @@ p{
   color: #666;
   font-size: 1.2rem;
 }
+
+label {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  background-color: #454545;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 50%;
+  .transition;
+}
+
 .purple-bg{
   background-color: rgba(140, 89, 189, 0.3);
   transition: background-color 1s;
@@ -40,42 +53,37 @@ p{
   text-align: center;
 }
 
-.flexbox-container{
-  display: flex;
+.d-flex.justify-content-center{
+  margin-bottom: 20px;
 }
 
-.
 .selection-container{
-  margin: 4px 10px;
-  border: 1px solid red;
+  margin: 10px 10px;
 }
+
+.radio-btn{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.radio-btn h3{
+  position: absolute;
+  left: 40%;
+  transform: translate(50%,50%);
+}
+
 .card{
   width: 400px;
-  /* display: inline-block; */
   text-align: left;
   padding: 20px 20px 0;
   margin: 15px 10px;
   box-shadow: 5px 5px 5px 2px #BBB;
 }
-/*
-.input{
-  display: flex;
-}
-
-.selection-container{
-  height: 30px;
-  width: 30px;
-  margin: 0 20px;
-} */
 
 input[type="radio"]{
   display: none;
-}
-
-input[type="radio"]+label{
-  padding: 30px;
-  margin: 5px 5px 0;
-  border-radius: 50%;
 }
 
 input[type="radio"]+label.green-bg:hover, input[type="radio"]:checked + label.green-bg{
