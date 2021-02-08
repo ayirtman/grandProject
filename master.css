@@ -137,3 +137,16 @@ input[type="radio"]+label.blue-bg:hover, input[type="radio"]:checked + label.blu
 input[type="radio"]+label.orange-bg:hover, input[type="radio"]:checked + label.orange-bg{
   background-color: rgba(255, 193, 1, 1);
 }
+
+.range-selector{
+  margin-bottom: 50px;
+}
+.d-flex.justify-content-around p{
+  font-size: 14px;
+  margin: 0;
+}
+
+input[type="range"]{
+  width: 100px;
+  background-color: red;
+}
