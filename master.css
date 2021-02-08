@@ -24,7 +24,7 @@ label {
   cursor: pointer;
   background-color: #454545;
   color: white;
-  padding: 15px 20px;
+  padding: 30px 30px;
   border-radius: 50%;
   bottom: -250px;
 }
@@ -70,17 +70,41 @@ label {
   margin-bottom: 20px;
 }
 
+.card > p{
+  flex-grow: 1;
+}
+
 .answer-container{
-  position: absolute;
-  left: 2%;
-  right: 3%;
-  bottom: 0px;
+  margin-bottom: 20px;
 }
 
 .selection-container{
-  margin: 10px 10px;
+  margin: 10px 0;
 }
 
+.selection-container .purple-bg::before{
+  content: 'R';
+  position: absolute;
+  transform: translate(-50%);
+}
+
+.selection-container .blue-bg::before{
+  content: 'U';
+  position: absolute;
+  transform: translate(-50%);
+}
+
+.selection-container .orange-bg::before{
+  content: 'Y';
+  position: absolute;
+  transform: translate(-50%);
+}
+
+.selection-container .green-bg::before{
+  content: 'Ö';
+  position: absolute;
+  transform: translate(-50%);
+}
 .radio-btn{
   height: 60px;
   width: 60px;
