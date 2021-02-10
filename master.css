@@ -162,3 +162,7 @@ input[type="range"]{
 .col-lg-1{
   border: 1px solid #000;
 }
+
+.col-lg-1 > p{
+  font-size: 20px;
+}
