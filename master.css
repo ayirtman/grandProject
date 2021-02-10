@@ -29,6 +29,9 @@ label {
   bottom: -250px;
 }
 
+.section-2, .section-3, .section-4, .section-5, .section-6, .section-7, .section-8{
+  display: none;
+}
 .purple-bg{
   background-color: rgba(140, 89, 189, 0.3);
   transition: background-color 1s;
@@ -138,6 +141,7 @@ input[type="radio"]+label.orange-bg:hover, input[type="radio"]:checked + label.o
   background-color: rgba(255, 193, 1, 1);
 }
 
+
 .range-selector{
   margin-bottom: 50px;
 }
@@ -149,4 +153,16 @@ input[type="radio"]+label.orange-bg:hover, input[type="radio"]:checked + label.o
 input[type="range"]{
   width: 100px;
   background-color: red;
+}
+
+.second-part-question{
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-part-answer p{
+  font-size: 15px;
+  border: 1px solid #000;
 }
