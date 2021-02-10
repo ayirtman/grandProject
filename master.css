@@ -155,14 +155,10 @@ input[type="range"]{
   background-color: red;
 }
 
-.second-part-question{
-  background-color: yellow;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.main-container{
+  margin: 20% 0;
 }
 
-.second-part-answer p{
-  font-size: 15px;
+.col-lg-1{
   border: 1px solid #000;
 }
